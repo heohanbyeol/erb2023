@@ -1,0 +1,17 @@
+<html>
+<head>
+<script>
+window.onload = function() {
+var btn = document.querySelector('button');
+btn.addEventListener("click", function() {
+var debg = document.querySelector('#debug');
+debg.innerHTML += this.innerHTML + "<br>";
+console.log(ev.target.innerHTML);
+})}
+</script>
+</head>
+<body>
+<button>버튼</button>
+<div id="debug"></div>
+</body>
+</html>
